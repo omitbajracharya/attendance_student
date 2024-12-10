@@ -22,7 +22,7 @@ function login() {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  fetch('https://orange-disco-74w775jj5q62xpgj-3000.app.github.dev/api/login', {
+  fetch('https://super-garbanzo-g7vw6xx75jr3wg74-3000.app.github.dev/api/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ function logout() {
 async function loadAttendance() {
   const token = sessionStorage.getItem('token');
 
-  const response = await fetch(`https://orange-disco-74w775jj5q62xpgj-3000.app.github.dev/api/get-attendance/${currentClass}`, {
+  const response = await fetch(`https://super-garbanzo-g7vw6xx75jr3wg74-3000.app.github.dev/api/get-attendance/${currentClass}`, {
     headers: {
       'Authorization': `Bearer ${token}`,
     },
@@ -151,7 +151,7 @@ function handleAttendanceChange(checkbox) {
   const status = checkbox.checked;
 
   const token = sessionStorage.getItem('token');
-  fetch('https://orange-disco-74w775jj5q62xpgj-3000.app.github.dev/api/mark-attendance', {
+  fetch('https://super-garbanzo-g7vw6xx75jr3wg74-3000.app.github.dev/api/mark-attendance', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -183,7 +183,7 @@ function addStudent(event) {
   if (!studentName) return;
 
   const token = sessionStorage.getItem('token');
-  fetch('https://orange-disco-74w775jj5q62xpgj-3000.app.github.dev/api/add-student', {
+  fetch('https://super-garbanzo-g7vw6xx75jr3wg74-3000.app.github.dev/api/add-student', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -210,7 +210,7 @@ function addStudent(event) {
 // Delete student from the class
 function deleteStudent(studentIndex) {
   const token = sessionStorage.getItem('token');
-  fetch('https://orange-disco-74w775jj5q62xpgj-3000.app.github.dev/api/delete-student', {
+  fetch('https://super-garbanzo-g7vw6xx75jr3wg74-3000.app.github.dev/api/delete-student', {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
