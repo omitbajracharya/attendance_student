@@ -37,9 +37,8 @@ function loadAttendanceData() {
   } catch (err) {
     console.log('Could not read attendance file, using default data');
     return {
-      a13: { students: [] },
-      a14: { students: [] },
-      a19: { students: [] },
+      a11: { students: [] },
+      a12: { students: [] }
     };
   }
 }
@@ -116,7 +115,7 @@ app.post('/api/add-student', authenticateToken, (req, res) => {
 // Route to get attendance for a class (accessible to all authenticated users)
 app.get('/api/get-attendance/:className', authenticateToken, (req, res) => {
   const { className } = req.params;
-
+  console.log({className})
   if (!attendanceData[className]) {
     return res.status(404).json({ message: 'Class not found' });
   }

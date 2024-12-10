@@ -1,73 +1,8 @@
 {
-  "a13": {
-    "students": [
-      {
-        "name": "Bro",
-        "attendance": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      }
-    ]
+  "a11": {
+    "students": []
   },
-  "a14": {
-    "students": [
-      {
-        "name": "Anup Singh",
-        "attendance": [
-          true,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      }
-    ]
-  },
-  "a19": {
+  "a12": {
     "students": []
   }
 }

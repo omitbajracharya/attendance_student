@@ -1,10 +1,10 @@
-let currentClass = 'a13'; // Default to 'a13'
+let currentClass = 'a11'; // Default to 'a11'
 
 // Check if user is logged in upon page load
 window.onload = function () {
   const token = sessionStorage.getItem('token');
   if (token) {
-    // Make sure 'a13' is selected on load
+    // Make sure 'a11' is selected on load
     showTab(currentClass);
 
     // Hide login form and show attendance tabs and table
@@ -41,7 +41,7 @@ function login() {
         document.getElementById('attendanceContainer').style.display = 'block';
         document.getElementById('logoutForm').style.display = 'block';
 
-        showTab('a13') // Automatically show the 'a13' class
+        showTab('a11') // Automatically show the 'a11' class
       } else {
         alert(data.message);
       }
